@@ -89,6 +89,23 @@ section h3 {
   margin: 10px 0 0 20px;
   padding: 0;
   list-style-type: disc;
+
+}
+.participants-list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.delete-participant {
+  cursor: pointer;
+  color: #d00;
+  margin-left: 8px;
+  font-size: 1.2em;
+  transition: color 0.2s;
+}
+.delete-participant:hover {
+  color: #a00;
 }
 
 .participants-list li {
