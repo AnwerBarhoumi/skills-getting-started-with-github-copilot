@@ -20,7 +20,32 @@ app.mount("/static", StaticFiles(directory=os.path.join(Path(__file__).parent,
           "static")), name="static")
 
 # In-memory activity database
-
+activities.update({
+    "Dance Class": {
+        "description": "Learn various dance styles and techniques",
+        "schedule": "Mondays, 4:00 PM - 5:30 PM",
+        "max_participants": 15,
+        "participants": []
+    },
+    "Music Ensemble": {
+        "description": "Collaborate with other musicians and perform",
+        "schedule": "Wednesdays, 5:00 PM - 6:30 PM",
+        "max_participants": 10,
+        "participants": []
+    },
+    "Tennis Club": {
+        "description": "Practice tennis skills and compete in matches",
+        "schedule": "Thursdays, 3:00 PM - 5:00 PM",
+        "max_participants": 20,
+        "participants": []
+    },
+    "Debate Team": {
+        "description": "Enhance public speaking and argumentation skills",
+        "schedule": "Tuesdays, 4:00 PM - 5:30 PM",
+        "max_participants": 12,
+        "participants": []
+    }
+})
 # Activity categories for reference
 activity_categories = {
     "sports": ["Gym Class", "Basketball Team", "Tennis Club", "Swimming Team"],
